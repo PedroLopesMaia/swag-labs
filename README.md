@@ -1,4 +1,4 @@
-# Projeto de automação de ecommerce com Selenium WebDriver 4, Cucumber BDD e Java
+# Projeto de automação de e-commerce com Selenium WebDriver 4, Cucumber BDD e Java
 
 O Swag Labs é um site de demonstração para fins de exercício de scripts de automação. O presente repositório abriga um projeto de automação escrito em linguagem java, que utiliza selenium WEBDriver para automatizar casos de testes escritos com Cucumber.
 
