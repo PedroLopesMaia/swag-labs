@@ -47,9 +47,15 @@ public class Login_Steps extends Base_PO {
         Assert.assertEquals(URL_Main_Page, "https://www.saucedemo.com/inventory.html");
     }
 
-    @Then("I should be presented with a error message")
-    public void i_should_be_presented_with_a_wrong_message() {
+    @Then("I should be presented with a wrong credentials error message")
+    public void i_should_be_presented_with_a_wrong_credentials_error_message() {
         WebElement error_message = driver.findElement(By.className("error-message-container"));
         Assert.assertEquals(error_message.getText(), "Epic sadface: Username and password do not match any user in this service");
+    }
+
+    @Then("I should be presented with a empty fields error message")
+    public void i_should_be_presented_with_a_empty_fields_error_message() {
+        WebElement error_message = driver.findElement(By.className("error-message-container"));
+        Assert.assertEquals(error_message.getText(), "Epic sadface: Username is required");
     }
 }

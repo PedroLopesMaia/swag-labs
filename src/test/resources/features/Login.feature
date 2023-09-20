@@ -15,4 +15,8 @@ Feature:Swag Labs - Login
     When I enter the correct username
     And I enter a wrong password
     And I click the login button
-    Then I should be presented with a error message
+    Then I should be presented with a wrong credentials error message
+
+  Scenario: Validate Unsuccessful Login - Empty fields
+    When I click the login button
+    Then I should be presented with a empty fields error message
