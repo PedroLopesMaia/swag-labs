@@ -10,3 +10,9 @@ Feature:Swag Labs - Login
     And I enter the correct password
     And I click the login button
     Then I should be presented with the main page
+
+  Scenario: Validate Unsuccessful Login - Wrong password
+    When I enter the correct username
+    And I enter a wrong password
+    And I click the login button
+    Then I should be presented with a error message
